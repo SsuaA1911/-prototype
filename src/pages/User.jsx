@@ -1,4 +1,4 @@
-// import Home from "./pages/Home";
+
 import { useState,useEffect } from "react";
 import axios from "axios";
 export default function User(){
@@ -24,13 +24,14 @@ export default function User(){
              {loading && <p className="text-center">Loading...</p>}
              {error && <p className="text-center text-red-500">{error}</p>}
             <section>
-            <h1>Generation Thailand <br />Home-UserSector</h1>
+            <h1 className="text-5xl text-center pb-2">Generation Thailand <br />User-Admin Sector</h1>
             </section>
-            <section>
-            {/* <Home/> */}
+            <section className="py-5">
             </section>
+            
             {user.map((user)=>(
-                    <table key={user.id}>
+                <div className="flex justify-center">
+                    <table key={user.id} className=" border-2 my-2 w-[50%]  text-center">
                        
                         <tr>
                             <td>Name</td>
@@ -44,8 +45,11 @@ export default function User(){
                         </tr>
                         
                     </table>
+                    </div>
+                    
             )
             )}
+            
         </div>
     )
 }
