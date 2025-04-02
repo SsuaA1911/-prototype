@@ -17,10 +17,10 @@ const router = createBrowserRouter([
           path:"/owner",
           element:<Owner/>,
         },
-        // {
-        //   path:"user",
-        //   element:<User/>
-        // }
+        {
+          path:"/user",
+          element:<User/>
+        }
        ]
     }
 ])

@@ -1,4 +1,4 @@
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
 import { useState,useEffect } from "react";
 import axios from "axios";
 export default function User(){
@@ -27,7 +27,7 @@ export default function User(){
             <h1>Generation Thailand <br />Home-UserSector</h1>
             </section>
             <section>
-            <Home/>
+            {/* <Home/> */}
             </section>
             {user.map((user)=>(
                     <table key={user.id}>
